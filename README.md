@@ -4,8 +4,6 @@ This file file serves as your book's preface, a great place to describe your boo
 
 ## 3245
 
-
-
 {% tabs %}
 {% tab title="First Tab" %}
 * [x] aa
@@ -21,4 +19,10 @@ This file file serves as your book's preface, a great place to describe your boo
 
 {% endtab %}
 {% endtabs %}
+
+asdfasdf
+
+sadfasdfdefs
+
+![asdfasdf](.gitbook/assets/image%20%281%29.png)
 
