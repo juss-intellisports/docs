@@ -16,7 +16,7 @@
 | 随机字符串 | nonce\_str | 是 | String\(32\) | 5K8264ILTKCH16CQ2502SI8ZNMTM67VS | 随机字符串，不长于32位。推荐[随机数生成算法](#) |
 | 签名 | sign | 是 | String\(32\) | C380BEC2BFD727A4B6845133519F3AD6 | 签名，[详见签名生成算法](#) |
 | 签名类型 | sign\_type | 否 | String\(32\) | HMAC-SHA256 | 签名类型，目前支持HMAC-SHA256和MD5，默认为MD5 |
-| 商品描述 | body | 是 | String\(128\) | image形象店-深圳腾大- QQ公仔 |  |
+| 商品描述 | body | 是 | String\(128\) | image形象店-深圳腾大- QQ公仔 | 有 |
 
 
 
