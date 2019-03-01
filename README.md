@@ -1,13 +1,12 @@
-# Introduction
+---
+description: 久事赛事项目管理系统
+---
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.a
+# 简介
 
-## 3245
+久事赛事项目管理系统
 
+## 
 
-asdfasdf
-
-sadfasdfdefs
-
-![asdfasdf](.gitbook/assets/image%20%281%29.png)
+![asdfasdf](.gitbook/assets/image.png)
 

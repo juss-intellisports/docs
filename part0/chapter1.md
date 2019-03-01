@@ -1,53 +1,40 @@
 # First1
 
-
-
-<table><tbody>
-    <tr>
-        <th>方法说明</th><th colspan="3">颜色名称颜色</th>
-    </tr>
-    <tr>
-        <td><font color="Hotpink">此处实现方法利用 CSDN-markdown 内嵌 html 语言的优势</font></td><td><font color="Hotpink">Hotpink</font></td><td bgcolor="Hotpink">rgb(240, 248, 255)</td>
-    </tr>
-    <tr>
-        <td><font color="Pink">借助 table, tr, td 等表格标签的 bgcolor 属性实现背景色设置</font></td><td><font color="pink">AntiqueWhite</font></td><td bgcolor="Pink">rgb(255, 192, 203)</td>
-    </tr>
-</table>
+| 方法说明 | 颜色名称颜色 |  |
+| :--- | :--- | :--- |
+| 此处实现方法利用 CSDN-markdown 内嵌 html 语言的优势 | Hotpink | rgb\(240, 248, 255\) |
+| 借助 table, tr, td 等表格标签的 bgcolor 属性实现背景色设置 | AntiqueWhite | rgb\(255, 192, 203\) |
 
 | 名称 | 变量名 | 必填 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 公众账号ID | appid | 是 | String\(32\) | wx8888888888888888 | 微信分配的公众账号ID（企业号corpid即为此appId） |
 | 商户号 | mch\_id | 是 | String\(32\) | 1900000109 | 微信支付分配的商户号 |
 | 设备号 | device\_info | 否 | String\(32\) | 013467007045764 | 终端设备号\(商户自定义，如门店编号\) |
-| 随机字符串 | nonce\_str | 是 | String\(32\) | 5K8264ILTKCH16CQ2502SI8ZNMTM67VS | 随机字符串，不长于32位。推荐[随机数生成算法](#) |
-| 签名 | sign | 是 | String\(32\) | C380BEC2BFD727A4B6845133519F3AD6 | 签名，[详见签名生成算法](#) |
+| 随机字符串 | nonce\_str | 是 | String\(32\) | 5K8264ILTKCH16CQ2502SI8ZNMTM67VS | 随机字符串，不长于32位。推荐[随机数生成算法](chapter1.md) |
+| 签名 | sign | 是 | String\(32\) | C380BEC2BFD727A4B6845133519F3AD6 | 签名，[详见签名生成算法](chapter1.md) |
 | 签名类型 | sign\_type | 否 | String\(32\) | HMAC-SHA256 | 签名类型，目前支持HMAC-SHA256和MD5，默认为MD5 |
 | 商品描述 | body | 是 | String\(128\) | image形象店-深圳腾大- QQ公仔 | 有 |
 
-
-
 | 名称 | 变量名 | 必填 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 公众账号ID | appid | 是 | String\(32\) | wx8888888888888888 | 微信分配的公众账号ID（企业号corpid即为此appId） |
 | 商户号 | mch\_id | 是 | String\(32\) | 1900000109 | 微信支付分配的商户号 |
 | 设备号 | device\_info | 否 | String\(32\) | 013467007045764 | 终端设备号\(商户自定义，如门店编号\) |
-| 随机字符串 | nonce\_str | 是 | String\(32\) | 5K8264ILTKCH16CQ2502SI8ZNMTM67VS | 随机字符串，不长于32位。推荐[随机数生成算法](#) |
-| 签名 | sign | 是 | String\(32\) | C380BEC2BFD727A4B6845133519F3AD6 | 签名，[详见签名生成算法](#) |
+| 随机字符串 | nonce\_str | 是 | String\(32\) | 5K8264ILTKCH16CQ2502SI8ZNMTM67VS | 随机字符串，不长于32位。推荐[随机数生成算法](chapter1.md) |
+| 签名 | sign | 是 | String\(32\) | C380BEC2BFD727A4B6845133519F3AD6 | 签名，[详见签名生成算法](chapter1.md) |
 | 签名类型 | sign\_type | 否 | String\(32\) | HMAC-SHA256 | 签名类型，目前支持HMAC-SHA256和MD5，默认为MD5 |
-| 商品描述 | body | 是 | String\(128\) | image形象店-深圳腾大- QQ公仔 | 商品简单描述，该字段须严格按照规范传递，具体请见[参数规定](#) |
-| 商品详情 | detail | 否 | String\(6000\) |  | 单品优惠功能字段，需要接入详见[单品优惠详细说明](#) |
+| 商品描述 | body | 是 | String\(128\) | image形象店-深圳腾大- QQ公仔 | 商品简单描述，该字段须严格按照规范传递，具体请见[参数规定](chapter1.md) |
+| 商品详情 | detail | 否 | String\(6000\) |  | 单品优惠功能字段，需要接入详见[单品优惠详细说明](chapter1.md) |
 | 附加数据 | attach | 否 | String\(127\) | 说明 | 附加数据，在查询API和支付通知中原样返回，该字段主要用于商户携带订单的自定义数据 |
-| 商户订单号 | out\_trade\_no | 是 | String\(32\) | 1217752501201407033233368018 | 商户系统内部订单号，要求32个字符内，只能是数字、大小写字母\_-\|\*且在同一个商户号下唯一。详见[商户订单号](#) |
-| 订单金额 | total\_fee | 是 | Int | 888 | 订单总金额，单位为分，只能为整数，详见[支付金额](#) |
-| 货币类型 | fee\_type | 否 | String\(16\) | CNY | 符合ISO4217标准的三位字母代码，默认人民币：CNY，详见[货币类型](#) |
+| 商户订单号 | out\_trade\_no | 是 | String\(32\) | 1217752501201407033233368018 | 商户系统内部订单号，要求32个字符内，只能是数字、大小写字母\_-\|\*且在同一个商户号下唯一。详见[商户订单号](chapter1.md) |
+| 订单金额 | total\_fee | 是 | Int | 888 | 订单总金额，单位为分，只能为整数，详见[支付金额](chapter1.md) |
+| 货币类型 | fee\_type | 否 | String\(16\) | CNY | 符合ISO4217标准的三位字母代码，默认人民币：CNY，详见[货币类型](chapter1.md) |
 | 终端IP | spbill\_create\_ip | 是 | String\(64\) | 8.8.8.8 | 支持IPV4和IPV6两种格式的IP地址。调用微信支付API的机器IP |
-| 订单优惠标记 | goods\_tag | 否 | String\(32\) | 1234 | 订单优惠标记，代金券或立减优惠功能的参数，详见[代金券或立减优惠](#) |
+| 订单优惠标记 | goods\_tag | 否 | String\(32\) | 1234 | 订单优惠标记，代金券或立减优惠功能的参数，详见[代金券或立减优惠](chapter1.md) |
 | 指定支付方式 | limit\_pay | 否 | String\(32\) | no\_credit | no\_credit--指定不能使用信用卡支付 |
-| 交易起始时间 | time\_start | 否 | String\(14\) | 20091225091010 | 订单生成时间，格式为yyyyMMddHHmmss，如2009年12月25日9点10分10秒表示为20091225091010。其他详见[时间规则](#) |
+| 交易起始时间 | time\_start | 否 | String\(14\) | 20091225091010 | 订单生成时间，格式为yyyyMMddHHmmss，如2009年12月25日9点10分10秒表示为20091225091010。其他详见[时间规则](chapter1.md) |
 | 交易结束时间 | time\_expire | 否 | String\(14\) | 20091227091010 | 订单失效时间，格式为yyyyMMddHHmmss，如2009年12月27日9点10分10秒表示为20091227091010。注意：最短失效时间间隔需大于1分钟 |
 | 电子发票入口开放标识 | receipt | 否 | String\(8\) | Y | Y，传入Y时，支付成功消息和支付详情页将出现开票入口。需要在微信支付商户平台或微信公众平台开通电子发票功能，传此字段才可生效 |
 | 授权码 | auth\_code | 是 | String\(128\) | 120061098828009406 | 扫码支付授权码，设备读取用户微信中的条码或者二维码信息 （注：用户付款码条形码规则：18位纯数字，以10、11、12、13、14、15开头） |
 | +场景信息 | scene\_info | 否 | String\(256\) | {"store\_info" : { "id": "SZTX001", "name": "腾大餐厅", "area\_code": "440305", "address": "科技园中一路腾讯大厦" }} | 该字段用于上报场景信息，目前支持上报实际门店信息。该字段为JSON对象数据，对象格式为{"store\_info":{"id": "门店ID","name": "名称","area\_code": "编码","address": "地址" }} ，字段详细说明请点击行前的+展开 |
-
-
 
